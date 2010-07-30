@@ -1,0 +1,24 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="ftw.favorite">
+
+    <include package="plone.app.contentmenu" />
+
+        
+    <browser:page
+        for="*"
+        name="favorites_dnd_saveorder"
+        class=".views.SaveDragndropOrderView"
+        permission="cmf.ModifyPortalContent"
+        />
+
+    <browser:page
+        for="*"
+        name="favorites_view"
+        permission="zope2.View"
+        class=".views.MyStuffFavoritesView"
+        allowed_attributes="" />
+
+
+</configure>

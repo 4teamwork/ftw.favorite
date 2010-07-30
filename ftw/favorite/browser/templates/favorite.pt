@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="ftw.favorite">
+
+<body tal:define="normalizeString nocall: context/@@plone/normalizeString">
+				  
+<metal:block fill-slot="top_slot"
+             tal:define="dummy python:request.set('disable_border',1)" />
+
+
+    <div metal:fill-slot="main">
+      <metal:main-macro define-macro="main"
+      					tal:define="items view/favorites;">
+      
+      <h1 i18n:translate="">Favoriten</h1>
+
+		<tal:if condition="not: items">
+			<strong i18n:translate="">
+				Sie haben keine Favoriten.
+			</strong>
+		
+		</tal:if>
+
+        <table tal:condition="items" class="favorite-listing">
+            <tr>
+                <th i18n:translate="">Erscheinen in dieser Reihenfolge auf der Startseite</th>
+                <th>&nbsp;</th>
+            </tr>
+            <tr tal:repeat="item items" class="favorite" tal:attributes="id item/UID">
+                <td><a tal:attributes="href string:./resolveUid/${item/getRemoteUrl};
+                                       title string:{item/Title}"  
+                       tal:content="item/Title">
+                    </a>
+                </td>
+                <td><a title="Entfernen" tal:attributes="href string:${item/getURL}/delete_confirmation">
+                        <img tal:attributes="src string: ${here/portal_url}/delete.gif" alt="Entfernen" />
+                    </a>
+                </td>
+            </tr>
+
+        </table>
+      </metal:main-macro>
+    </div>
+
+</body>
+</html>
