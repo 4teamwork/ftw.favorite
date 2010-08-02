@@ -74,7 +74,7 @@
                        tal:content="item/Title">
                     </a>
                 </td>
-                <td><a title="Entfernen" tal:attributes="href string:${item/getURL}/delete_confirmation">
+                <td><a title="Entfernen" tal:attributes="href string:${item/absolute_url}/delete_confirmation">
                         <img tal:attributes="src string: ${here/portal_url}/++resource++ftw.favorite.resources/icon_remove_favorite.gif" alt="Entfernen" />
                     </a>
                 </td>
