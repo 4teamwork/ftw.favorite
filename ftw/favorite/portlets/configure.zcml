@@ -3,11 +3,14 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="ftw.favorite">
 
-    <!-- Ensure Plone's portlets ZCML has already been processed;
-         without this, we may get a permission lookup error
-      -->
     <include package="plone.app.portlets" />
 
-	<!-- -*- extra stuff goes here -*- -->
-
+    <plone:portlet
+        name="ftw.favorite.portlet"
+        interface=".favorites.IFavoritePortlet"
+        assignment=".favorites.Assignment"
+        renderer=".favorites.Renderer"
+        addview=".favorites.AddForm"
+        />
+        
 </configure>
