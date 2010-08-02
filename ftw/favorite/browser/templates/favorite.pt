@@ -7,7 +7,45 @@
       i18n:domain="ftw.favorite">
 
 <body tal:define="normalizeString nocall: context/@@plone/normalizeString">
-				  
+    
+<metal:js fill-slot="javascript_head_slot">
+    <script type="text/javascript" 
+    tal:content="python:'homefolder= \'' + context.portal_membership.getAuthenticatedMember().getHomeUrl()+'\';'">
+    </script>
+    
+    <script type="text/javascript">
+        /* favourite listing */
+        jq(function() {
+          jq('table.favorite-listing').sortable({
+            'items':'tr.favorite',
+            'start' : function(event, ui) {
+              jq(ui.item).removeClass('top5');
+            },
+            'stop': function(event, ui) {
+              var ids = [];
+              jq('table.favorite-listing tr.favorite').each(function(index, el) {
+                ids.push(el.id);
+                if(index<5) {
+                  jq(this).addClass('top5');
+                }
+              });
+              ids = ids.join(',');
+              var bhref, base_href;
+              bhref= base_href = jq('base')[0].href;
+              jq.post(homefolder +'/Favorites/favorites_dnd_saveorder', { uids : ids });
+            }
+          });
+
+          jq('table.favorite-listing tr.favorite').each(function(index, el) {
+            if(index<5) {
+              jq(this).addClass('top5');
+            }
+          });
+        });
+    </script>
+</metal:js>
+
+
 <metal:block fill-slot="top_slot"
              tal:define="dummy python:request.set('disable_border',1)" />
 
@@ -31,13 +69,13 @@
                 <th>&nbsp;</th>
             </tr>
             <tr tal:repeat="item items" class="favorite" tal:attributes="id item/UID">
-                <td><a tal:attributes="href string:./resolveUid/${item/getRemoteUrl};
+                <td><a tal:attributes="href string:${item/getRemoteUrl};
                                        title string:{item/Title}"  
                        tal:content="item/Title">
                     </a>
                 </td>
                 <td><a title="Entfernen" tal:attributes="href string:${item/getURL}/delete_confirmation">
-                        <img tal:attributes="src string: ${here/portal_url}/delete.gif" alt="Entfernen" />
+                        <img tal:attributes="src string: ${here/portal_url}/++resource++ftw.favorite.resources/icon_remove_favorite.gif" alt="Entfernen" />
                     </a>
                 </td>
             </tr>

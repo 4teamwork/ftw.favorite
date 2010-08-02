@@ -5,11 +5,15 @@
 
     <include package="plone.app.contentmenu" />
 
+    <browser:resourceDirectory
+        name="ftw.favorite.resources"
+        directory="resources"
+        />
         
     <browser:page
         for="*"
         name="favorites_dnd_saveorder"
-        class=".views.SaveDragndropOrderView"
+        class=".dndreorder.SaveDragndropOrderView"
         permission="cmf.ModifyPortalContent"
         />
 
@@ -17,8 +21,15 @@
         for="*"
         name="favorites_view"
         permission="zope2.View"
-        class=".views.MyStuffFavoritesView"
-        allowed_attributes="" />
+        class=".favorite.FavoritesView"
+        />
 
+
+    <browser:page
+        for="*"
+        name="add_to_favorites"
+        permission="zope2.View"
+        class=".adder.AddToFavorites"
+        />
 
 </configure>
