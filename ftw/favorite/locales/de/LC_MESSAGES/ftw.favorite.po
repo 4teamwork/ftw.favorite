@@ -1,6 +1,3 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -12,62 +9,61 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: ftw.favorite\n"
+"Domain: DOMAIN\n"
 
 #: ./ftw/favorite/browser/adder.py:57
 msgid "${title} has been added to your Favorites."
-msgstr ""
+msgstr "${title} wurde zu den Favoriten hinzugefügt"
 
 #: ./ftw/favorite/portlets/favorites.py:74
 msgid "Add Favorite Portlet"
-msgstr ""
+msgstr "Favoriten Portlet hinzufügen"
 
 #: ./ftw/favorite/browser/adder.py:21
 msgid "Can't access home folder. Favorite is not added."
-msgstr ""
+msgstr "Kann den Favoriten Ordner nicht erreichen/erstellen. Favorit wurde nicht hinzugefügt"
 
 #: ./ftw/favorite/portlets/favorites.py:83
 msgid "Edit Favorite Portlet"
-msgstr ""
+msgstr "Favoriten Portlet bearbeiten"
 
 #: ./ftw/favorite/browser/templates/favorite.pt:68
 msgid "Erscheinen in dieser Reihenfolge auf der Startseite"
-msgstr ""
+msgstr "Erscheinen in dieser Reihenfolge auf der Startseite"
 
 #: ./ftw/favorite/browser/templates/favorite.pt:57
 msgid "Favoriten"
-msgstr ""
+msgstr "Favoriten"
 
 #. Default: "Favorites"
 #: ./ftw/favorite/portlets/favorites.py:28
 msgid "Favorites"
-msgstr ""
+msgstr "Favoriten"
 
 #: ./ftw/favorite/portlets/favorites.py:15
 msgid "How many items to list."
-msgstr ""
+msgstr "Wie viele Favoriten sollen aufgelistet werden. "
 
 #: ./ftw/favorite/portlets/favorites.py:14
 msgid "Number of items to display"
-msgstr ""
+msgstr "Geben Sie eine Zahl ein."
 
 #: ./ftw/favorite/browser/templates/favorite.pt:60
 msgid "Sie haben keine Favoriten."
-msgstr ""
+msgstr "Sie haben keine Favoriten."
 
 #: ./ftw/favorite/browser/adder.py:63
 msgid "There was a problem adding ${title} to your Favorites."
-msgstr ""
+msgstr "${title} konnte nicht zu den Favoriten hinzugefügt werden."
 
 #: ./ftw/favorite/portlets/favorites.py:75
 msgid "This portlet displays your Favorites"
-msgstr ""
+msgstr "Dieses Portlet zeigt Ihre Favoriten an."
 
 #. Default: "Favorites portlet"
 #: ./ftw/favorite/profiles/default/portlets.xml
 msgid "title_favourites_portlet"
-msgstr ""
+msgstr "Favoriten"
+
 
