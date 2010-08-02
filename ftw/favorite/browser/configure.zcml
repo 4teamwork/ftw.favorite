@@ -32,4 +32,11 @@
         class=".adder.AddToFavorites"
         />
 
+    <browser:view
+        for="*"
+        name="remove_from_favorites"
+        permission="zope2.View"
+        class=".remove_favorite.RemoveFavourite"
+        />
+
 </configure>
