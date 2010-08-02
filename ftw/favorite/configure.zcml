@@ -11,7 +11,7 @@
     <include package=".browser" />
     <include package=".content" />
 
-    <i18n:registerTranslations directory="locales" />
+    <!--i18n:registerTranslations directory="locales" /-->
 
     <!-- Register the installation GenericSetup extension profile -->
     <genericsetup:registerProfile
