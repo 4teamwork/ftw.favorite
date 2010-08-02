@@ -2,6 +2,7 @@ from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.CMFCore.utils import getToolByName
 
+
 class FavoritesView(BrowserView):
     """Favorits folder default view"""
 

@@ -2,6 +2,7 @@ from Products.Five.browser import BrowserView
 
 
 class SaveDragndropOrderView(BrowserView):
+    """Stores the new order"""
 
     def __call__(self, uids=[]):
         uids = uids.split(',')
