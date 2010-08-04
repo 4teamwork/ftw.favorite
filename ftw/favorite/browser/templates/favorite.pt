@@ -45,6 +45,15 @@
     </script>
 </metal:js>
 
+<metal:css fill-slot="style_slot">
+<style>
+    table.favorite-listing tr.favorite:hover{
+        cursor:move;
+        background-color:Gainsboro;
+    }
+</style>
+</metal:css>
+
 
 <metal:block fill-slot="top_slot"
              tal:define="dummy python:request.set('disable_border',1)" />
