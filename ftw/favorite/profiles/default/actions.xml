@@ -11,8 +11,8 @@
   </object>
 
   <object name="document_actions" meta_type="CMF Action Category">
-   <object name="addtofavorites" meta_type="CMF Action" i18n:domain="plone">
-    <property name="title" i18n:translate="">Add to favorites</property>
+   <object name="addtofavorites" meta_type="CMF Action" i18n:domain="ftw.favorite">
+    <property name="title" i18n:translate="">Add to Favorites</property>
     <property name="description" i18n:translate=""></property>
     <property name="url_expr">string:${object_url}/@@add_to_favorites</property>
     <property name="icon_expr"> string:${globals_view/navigationRootUrl}/++resource++ftw.favorite.resources/icon_add_favorite.gif</property>
