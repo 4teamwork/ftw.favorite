@@ -11,13 +11,15 @@ jq(function(){
 
 
     //Remove Favorite
-    jq('.favoriteRemove').click(function(){
-        var item =  jq('.favoriteRemove:first').parents('.portletItem');
-        var id = item.attr("id");
+    jq('.favoriteRemove').click(function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        var item = jq(this).closest('.favorite');
+        var uid = item.attr("id");
         jq.ajax({
             type :      'POST',
             url :       './remove_from_favorites',
-            data :      'id='.concat(id)
+            data :      'uid='.concat(uid)
         });
         
         item.hide().remove();

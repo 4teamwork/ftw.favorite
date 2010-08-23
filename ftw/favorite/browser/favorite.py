@@ -6,7 +6,7 @@ from Products.CMFCore.utils import getToolByName
 class FavoritesView(BrowserView):
     """Favorits folder default view"""
 
-    template = ViewPageTemplateFile('templates/favorite.pt')
+    template = ViewPageTemplateFile('favorite.pt')
 
     def __call__(self):
         return self.template()
