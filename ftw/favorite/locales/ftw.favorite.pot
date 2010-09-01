@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-08-10 09:50+0000\n"
+"POT-Creation-Date: 2010-08-11 14:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,6 +47,7 @@ msgstr ""
 
 #. Default: "Favorites"
 #: ./ftw/favorite/portlets/favorites.py:28
+#: ./ftw/favorite/profiles/default/actions.xml
 msgid "Favorites"
 msgstr ""
 
