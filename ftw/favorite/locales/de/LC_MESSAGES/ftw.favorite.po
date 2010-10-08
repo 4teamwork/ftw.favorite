@@ -71,4 +71,11 @@ msgstr "Dieses Portlet zeigt Ihre Favoriten an."
 msgid "title_favourites_portlet"
 msgstr "Favoriten"
 
+#: ./ftw/favorite/browser/templates/favorite.pt:7
+msgid "box_favorites"
+msgstr "Favoriten"
+
+#: ./ftw/favorite/browser/templates/favorite.pt:7
+msgid "box_no_fav_items"
+msgstr "keine Favoriten"
 

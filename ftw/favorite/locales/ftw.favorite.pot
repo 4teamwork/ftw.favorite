@@ -76,3 +76,12 @@ msgstr ""
 msgid "title_favourites_portlet"
 msgstr ""
 
+#: ./ftw/favorite/browser/templates/favorite.pt:7
+msgid "box_favorites"
+msgstr "favorites"
+
+#: ./ftw/favorite/browser/templates/favorite.pt:7
+msgid "box_no_fav_items"
+msgstr ""
+
+

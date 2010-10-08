@@ -1,4 +1,4 @@
-<dl class="portlet favorite" i18n="ftw.favorite"
+<dl class="portlet favorite" i18n:domain="ftw.favorite"
     tal:define="items view/items">
 
     <dt class="portletHeader clearfix">
