@@ -12,7 +12,7 @@ maintainer = 'Mathias Leimgruber'
 
 long_description = (
     read('README.txt')
-    + '\n' +
+    + '\n\n\n' +
     'Change history\n'
     '**************\n'
     + '\n' +

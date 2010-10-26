@@ -6,3 +6,4 @@ Changelog
 ---
 
 * Init release
+
