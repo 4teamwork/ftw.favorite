@@ -14,15 +14,13 @@ jq(function(){
     jq('.favoriteRemove').click(function(e){
         e.stopPropagation();
         e.preventDefault();
-        var item = jq(this).closest('.favorite');
-        var uid = item.attr("id");
+        var dd = jq(this).parents('dd:first');
         jq.ajax({
             type :      'POST',
             url :       './remove_from_favorites',
-            data :      'uid='.concat(uid)
+            data :      'id='.concat(dd.attr("id"))
         });
-        
-        item.hide().remove();
+        dd.hide().remove();
     });
   
 });

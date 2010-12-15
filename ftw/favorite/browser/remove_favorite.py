@@ -4,16 +4,14 @@ from Products.Five import BrowserView
 class RemoveFavourite(BrowserView):
     """Removes an favorite"""
 
+
     def __call__(self, *args, **kwargs):
 
-        uid = self.request.get('uid', None)
-        if uid is None:
-            raise
-        uid = uid.replace('uid_', '')
-        obj = self.context.reference_catalog.lookupObject(uid)
+        favid = self.request.get('id', None)
+        if favid is None:
+            raise Exception('"id" not found in request')
         favFolder = self.get_fav_folder()
-
-        favFolder.manage_delObjects([obj.id, ])
+        favFolder.manage_delObjects([favid, ])
 
         return 'OK'
 
