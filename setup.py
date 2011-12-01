@@ -15,7 +15,7 @@ setup(name='ftw.favorite',
       version=version,
       description="ftw.favorite provides content-type like favorites",
       long_description = open('README.rst').read() + '\n' + \
-            open(os.path.join('docs', 'HISTORY.txt')).read(),
+          open(os.path.join('docs', 'HISTORY.txt')).read(),
 
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -42,14 +42,16 @@ setup(name='ftw.favorite',
       include_package_data=True,
       zip_safe=False,
 
-      install_requires=['setuptools',
-                        # -*- Extra requirements: -*-
-                        ],
+      install_requires=[
+        'setuptools',
+        ],
 
       tests_require=tests_require,
       extras_require=dict(tests=tests_require),
       test_suite = 'ftw.favorite.tests.test_docs.test_suite',
       entry_points="""
       # -*- entry_points -*-
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
       )
