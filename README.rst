@@ -1,7 +1,7 @@
 ftw.favorite
 ============
 
-This Package provides a Content-Type like Favorite like in Plone 3.
+This package provides a favorite content-type for plone.
 
 
 Usage
