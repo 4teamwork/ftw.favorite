@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-08-11 14:23+0000\n"
+"POT-Creation-Date: 2012-01-30 06:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,6 +24,10 @@ msgstr "Favoriten Portlet hinzufügen"
 msgid "Add to Favorites"
 msgstr "Zu den Favoriten hinzufügen"
 
+#: ./ftw/favorite/profiles/default/actions.xml
+msgid "Add to your Favorites."
+msgstr "Zu den Favoriten hinzufügen."
+
 #: ./ftw/favorite/browser/adder.py:21
 msgid "Can't access home folder. Favorite is not added."
 msgstr "Kann den Favoriten Ordner nicht erreichen/erstellen. Favorit wurde nicht hinzugefügt"
@@ -32,11 +36,11 @@ msgstr "Kann den Favoriten Ordner nicht erreichen/erstellen. Favorit wurde nicht
 msgid "Edit Favorite Portlet"
 msgstr "Favoriten Portlet bearbeiten"
 
-#: ./ftw/favorite/browser/templates/favorite.pt:77
+#: ./ftw/favorite/browser/favorite.pt:77
 msgid "Erscheinen in dieser Reihenfolge auf der Startseite"
 msgstr "Erscheinen in dieser Reihenfolge auf der Startseite"
 
-#: ./ftw/favorite/browser/templates/favorite.pt:66
+#: ./ftw/favorite/browser/favorite.pt:66
 msgid "Favoriten"
 msgstr "Favoriten"
 
@@ -54,7 +58,7 @@ msgstr "Wie viele Favoriten sollen aufgelistet werden. "
 msgid "Number of items to display"
 msgstr "Geben Sie eine Zahl ein."
 
-#: ./ftw/favorite/browser/templates/favorite.pt:69
+#: ./ftw/favorite/browser/favorite.pt:69
 msgid "Sie haben keine Favoriten."
 msgstr "Sie haben keine Favoriten."
 
@@ -66,16 +70,19 @@ msgstr "${title} konnte nicht zu den Favoriten hinzugefügt werden."
 msgid "This portlet displays your Favorites"
 msgstr "Dieses Portlet zeigt Ihre Favoriten an."
 
+#. Default: "favorites"
+#: ./ftw/favorite/portlets/templates/favorites.pt:6
+msgid "box_favorites"
+msgstr "Favoriten"
+
+#. Default: "No items."
+#: ./ftw/favorite/portlets/templates/favorites.pt:33
+msgid "box_no_fav_items"
+msgstr "keine Favoriten"
+
 #. Default: "Favorites portlet"
 #: ./ftw/favorite/profiles/default/portlets.xml
 msgid "title_favourites_portlet"
 msgstr "Favoriten"
 
-#: ./ftw/favorite/browser/templates/favorite.pt:7
-msgid "box_favorites"
-msgstr "Favoriten"
-
-#: ./ftw/favorite/browser/templates/favorite.pt:7
-msgid "box_no_fav_items"
-msgstr "keine Favoriten"
 
