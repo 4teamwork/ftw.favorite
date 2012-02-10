@@ -5,7 +5,7 @@ Changelog
 1.1.1 (Unreleased)
 ------------------
 
-- Switched description and title of field in favorite portlet.
+- Changed description and title of field in favorite portlet.
   [Julian Infanger]
 
 - Add a description to acton.

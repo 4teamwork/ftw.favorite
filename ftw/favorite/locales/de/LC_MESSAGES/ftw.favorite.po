@@ -56,7 +56,7 @@ msgstr "Geben Sie eine Zahl ein."
 
 #: ./ftw/favorite/portlets/favorites.py:14
 msgid "Number of items to display"
-msgstr "Wie viele Favoriten sollen aufgelistet werden. "
+msgstr "Anzahl der Favoriten, die aufgelistet werden"
 
 #: ./ftw/favorite/browser/favorite.pt:69
 msgid "Sie haben keine Favoriten."
