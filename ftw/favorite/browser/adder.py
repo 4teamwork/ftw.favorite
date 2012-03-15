@@ -12,10 +12,7 @@ class AddToFavorites(BrowserView):
         context = self.context
         response = context.REQUEST.response
         homeFolder=context.portal_membership.getHomeFolder()
-        state = context.restrictedTraverse("@@plone_context_state")
-        view_url = '%s/%s' % (
-            context.absolute_url(),
-            state.view_template_id())
+        view_url = context.absolute_url()
         if not homeFolder:
             context.plone_utils.addPortalMessage(
                 _(u'Can\'t access home folder. Favorite is not added.'),

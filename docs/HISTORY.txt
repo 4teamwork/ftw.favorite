@@ -5,6 +5,9 @@ Changelog
 1.1.2 (unreleased)
 ------------------
 
+- Fix traversing after a new fav. has been added.
+  [mathias.leimgruber]
+
 - Fixed deletion of favorites.
   [mathias.leimgruber]
 
