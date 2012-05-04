@@ -7,12 +7,12 @@
       i18n:domain="ftw.favorite">
 
 <body tal:define="normalizeString nocall: context/@@plone/normalizeString">
-    
+
 <metal:js fill-slot="javascript_head_slot">
-    <script type="text/javascript" 
+    <script type="text/javascript"
     tal:content="python:'homefolder= \'' + context.portal_membership.getAuthenticatedMember().getHomeUrl()+'\';'">
     </script>
-    
+
     <script type="text/javascript">
         /* favourite listing */
         jq(function() {
@@ -61,15 +61,15 @@
 
     <div metal:fill-slot="main">
       <metal:main-macro define-macro="main"
-      					tal:define="items view/favorites;">
-      
+          tal:define="items view/favorites;">
+
       <h1 i18n:translate="">Favoriten</h1>
 
 		<tal:if condition="not: items">
 			<strong i18n:translate="">
 				Sie haben keine Favoriten.
 			</strong>
-		
+
 		</tal:if>
 
         <table tal:condition="items" class="favorite-listing">
@@ -79,7 +79,7 @@
             </tr>
             <tr tal:repeat="item items" class="favorite" tal:attributes="id string:uid_${item/UID}">
                 <td><a tal:attributes="href string:${item/getRemoteUrl};
-                                       title string:{item/Title}"  
+                                       title string:{item/Title}"
                        tal:content="item/Title">
                     </a>
                 </td>
