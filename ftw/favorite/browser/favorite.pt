@@ -41,6 +41,17 @@
               jq(this).addClass('top5');
             }
           });
+
+          // Delete dialog
+            jq('a.favoriteRemove').prepOverlay({
+                subtype: 'ajax',
+                filter: "#content>*",
+                formselector: '#delete_confirmation',
+                noform: 'redirect',
+                redirect: homefolder + '/Favorites/favorites_view',
+                closeselector: '[name=form.button.Cancel]',
+                width:'50%'
+            });
         });
     </script>
 </metal:js>
