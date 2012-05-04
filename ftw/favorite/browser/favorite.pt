@@ -51,6 +51,10 @@
         cursor:move;
         background-color:Gainsboro;
     }
+
+    #portal-breadcrumbs {
+        display:none;
+    }
 </style>
 </metal:css>
 
@@ -58,6 +62,7 @@
 <metal:block fill-slot="top_slot"
              tal:define="dummy python:request.set('disable_border',1)" />
 
+<metal:block fill-slot="column_one_slot" />
 
     <div metal:fill-slot="main">
       <metal:main-macro define-macro="main"
