@@ -26,7 +26,9 @@ Links
 - Package on pypi: http://pypi.python.org/pypi/ftw.favorite
 
 
-Maintainer
-==========
+Copyright
+---------
 
-This package is produced and maintained by `4teamwork <http://www.4teamwork.ch/>`_ company.
+This package is copyright by `4teamwork <http://www.4teamwork.ch/>`_.
+
+``ftw.favorite`` is licensed under GNU General Public License, version 2.
