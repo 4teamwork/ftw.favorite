@@ -5,7 +5,8 @@ Changelog
 1.1.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Register edit-view for favorite-portlet.
+  [Julian Infanger]
 
 
 1.1.3 (2012-05-09)
