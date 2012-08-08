@@ -14,11 +14,11 @@ jq(function(){
     jq('.favoriteRemove').click(function(e){
         e.stopPropagation();
         e.preventDefault();
-        var record = jq(this).closest('tr');
+        var record = jq(this).closest('dd');
         jq.ajax({
             type :      'POST',
             url :       './remove_from_favorites',
-            data :      'uid='.concat(record.attr("id"))
+            data :      'favid='.concat(record.attr("id"))
         });
         record.hide().remove();
     });

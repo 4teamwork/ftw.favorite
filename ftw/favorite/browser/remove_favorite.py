@@ -6,11 +6,10 @@ class RemoveFavourite(BrowserView):
 
     def __call__(self, *args, **kwargs):
 
-        favuid = self.request.get('uid', '').replace('uid_', '')
-        if favuid is None:
+        favid = self.request.get('favid', '')
+        if not favid:
             raise Exception('"id" not found in request')
         favFolder = self.get_fav_folder()
-        favid = self.context.reference_catalog.lookupObject(favuid).id
         favFolder.manage_delObjects([favid, ])
 
         return 'OK'
