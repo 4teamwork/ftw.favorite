@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 import os
 
 
-version = '1.1.5'
+version = '1.1.6.dev0'
 maintainer = 'Mathias Leimgruber'
 
 tests_require=['zope.testing']
