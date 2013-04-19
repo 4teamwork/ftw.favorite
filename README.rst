@@ -32,3 +32,7 @@ Copyright
 This package is copyright by `4teamwork <http://www.4teamwork.ch/>`_.
 
 ``ftw.favorite`` is licensed under GNU General Public License, version 2.
+
+.. image:: https://cruel-carlota.pagodabox.com/5d6c5bf18f02391295f7df6c69d1ea0d
+   :alt: githalytics.com
+   :target: http://githalytics.com/4teamwork/ftw.favorite
