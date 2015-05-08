@@ -21,9 +21,9 @@ Usage
 Links
 =====
 
-- Main github project repository: https://github.com/4teamwork/ftw.favorite
-- Issue tracker: https://github.com/4teamwork/ftw.favorite/issues
-- Package on pypi: http://pypi.python.org/pypi/ftw.favorite
+- Github: https://github.com/4teamwork/ftw.favorite
+- Issues: https://github.com/4teamwork/ftw.favorite/issues
+- Pypi: http://pypi.python.org/pypi/ftw.favorite
 
 
 Copyright
